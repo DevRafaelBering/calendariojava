@@ -1,0 +1,119 @@
+.calendar {
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weekdays {
+  display: flex;
+}
+
+.weekdays div {
+  flex: 1;
+  text-align: center;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.days div {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.days div:hover {
+  background-color: #f0f0f0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.content-main {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 2.27374e-13px 0px 0px;
+
+  width: 1197.91px;
+  max-width: 1680px;
+  height: 750px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 6px #b5b5b5;
+  border-radius: 8px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.content-book {
+  width: 400px;
+  min-width: 400px;
+  height: 750px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px -5.68434e-14px;
+}
+.content-book h1 {
+  width: 158.87px;
+  height: 27px;
+  padding-top: 28px;
+  padding-left: 30px;
+}
+
+.content-discript {
+  padding-top: 28px;
+  padding-left: 30px;
+}
+
+.btn-select {
+  width: 339.99px;
+  height: 45.99px;
+  padding: 0.01px 0px 0px 4px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+}
+
+.content-calendar {
+  border-left: 0.91px solid #e5e7eb;
+  width: 797.91px;
+  height: 750px;
+  padding: 20px 20px 20px 32.91px;
+  gap: 0px;
+  border: 0px 0px 0px 0.91px;
+}
+
+.titulo-date {
+  font-family: Roboto;
+  font-size: 21.5px;
+  font-weight: 800;
+  line-height: 21.5px;
+  text-align: left;
+}
+
+.current-day::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 5px;
+}
