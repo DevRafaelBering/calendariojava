@@ -1,7 +1,7 @@
 .calendar {
-  max-width: 400px;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding-block: 15px;
+  width: 400px;
 }
 
 .header {
@@ -20,16 +20,17 @@
 }
 
 .days {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: center;
 }
 
 .days div {
-  flex: 1;
-  text-align: center;
-  border: 1px solid #ccc;
-  padding: 10px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  align-items: center;
 }
 
 .days div:hover {
