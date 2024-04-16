@@ -6,15 +6,16 @@
 }
 
 .calendar {
-  border: 1px solid #ccc;
   padding-block: 15px;
   width: 400px;
+  padding-top: 32.91px;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 16.73px;
 }
 
 .weekdays {
@@ -43,9 +44,6 @@
 .days div:hover {
   background-color: #f0f0f0;
 }
-body {
-  font-family: "Roboto", sans-serif;
-}
 
 main {
   background-color: #ffffff;
@@ -66,7 +64,7 @@ body {
   padding: 30px;
 }
 .content-calendar {
-  width: 503px;
+  width: 797.91px;
   padding-top: 36px;
   padding-inline: 25px;
 }
@@ -77,6 +75,7 @@ body {
   font-weight: 800;
   line-height: 21.5px;
   text-align: left;
+  padding-top: 35.24px;
 }
 
 .current-day::after {

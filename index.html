@@ -38,7 +38,7 @@
         <h1 class="titulo-date">Pick date and time</h1>
         <div class="calendar">
           <div class="header">
-            <h2 id="monthYear"></h2>
+            <p id="monthYear"></p>
             <div>
               <button id="prev" onclick="prevMonth()">&lt;</button>
               <button id="next" onclick="nextMonth()">&gt;</button>
@@ -56,7 +56,11 @@
           <div class="days" id="days"></div>
         </div>
       </section>
-      <section class="content-mark"></section>
+      <script>
+        function myFunction() {
+          console.log("Opa foi");
+        }
+      </script>
       <script src="script.js"></script>
       <script src="select-script.js"></script>
     </main>
