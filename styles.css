@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
 .calendar {
   border: 1px solid #ccc;
   padding-block: 15px;
@@ -40,64 +47,28 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.content-main {
+main {
+  background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px 2.27374e-13px 0px 0px;
-
-  width: 1197.91px;
-  max-width: 1680px;
   height: 750px;
-
-  background: #ffffff;
-  box-shadow: 0px 0px 6px #b5b5b5;
+  margin: auto;
   border-radius: 8px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
-
-.content-book {
+body {
+  min-height: 100vh;
+  display: flex;
+  background-color: #f5f5f5;
+}
+.left-container {
   width: 400px;
-  min-width: 400px;
-  height: 750px;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 0px -5.68434e-14px;
+  border-right: 1px solid #e5e7eb;
+  height: 100%;
+  padding: 30px;
 }
-.content-book h1 {
-  width: 158.87px;
-  height: 27px;
-  padding-top: 28px;
-  padding-left: 30px;
-}
-
-.content-discript {
-  padding-top: 28px;
-  padding-left: 30px;
-}
-
-.btn-select {
-  width: 339.99px;
-  height: 45.99px;
-  padding: 0.01px 0px 0px 4px;
-  gap: 0px;
-  border-radius: 4px 0px 0px 0px;
-}
-
 .content-calendar {
-  border-left: 0.91px solid #e5e7eb;
-  width: 797.91px;
-  height: 750px;
-  padding: 20px 20px 20px 32.91px;
-  gap: 0px;
-  border: 0px 0px 0px 0.91px;
+  width: 503px;
+  padding-top: 36px;
+  padding-inline: 25px;
 }
 
 .titulo-date {

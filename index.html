@@ -5,30 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calendário de Reuniões</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./select-styles.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
     />
   </head>
   <body>
-    <div class="content-main">
-      <section class="content-book">
-        <h1 class="titulo-book">Book a Court</h1>
-        <div class="content-discript">
-          <h4>Location</h4>
-          <select class="btn-select">
-            <option>Singapore</option>
-            <option>Brazil</option>
-          </select>
+    <main>
+      <div class="left-container">
+        <div id="book-court">
+          <h1>Book a Court</h1>
+          <p>Location</p>
+          <div class="custom-select" style="width: 340px">
+            <select>
+              <option value="singapore">Singapore</option>
+              <option value="0">Singapore</option>
+              <option value="1">Brazil</option>
+            </select>
+          </div>
+          <p>Duration</p>
+          <div class="custom-select" style="width: 340px">
+            <select>
+              <option value="30">30 minutes</option>
+              <option value="30" onclick="myFunction()">30 minutes</option>
+              <option value="60">60 minutes</option>
+            </select>
+          </div>
         </div>
-        <div class="content-discript">
-          <h4>Duration</h4>
-          <select class="btn-select">
-            <option>60 min</option>
-            <option>30 min</option>
-          </select>
-        </div>
-      </section>
+      </div>
       <section class="content-calendar">
         <h1 class="titulo-date">Pick date and time</h1>
         <div class="calendar">
@@ -53,6 +58,7 @@
       </section>
       <section class="content-mark"></section>
       <script src="script.js"></script>
-    </div>
+      <script src="select-script.js"></script>
+    </main>
   </body>
 </html>
