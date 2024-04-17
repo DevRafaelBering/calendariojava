@@ -13,9 +13,10 @@
 
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding-bottom: 16.73px;
+  padding-inline: 10px;
+  margin-bottom: 10px;
+  align-items: center;
 }
 
 .weekdays {
@@ -51,6 +52,7 @@ main {
   height: 750px;
   margin: auto;
   border-radius: 8px;
+  box-shadow: 0 0 6px 0 #b5b5b5;
 }
 body {
   min-height: 100vh;
@@ -62,6 +64,10 @@ body {
   border-right: 1px solid #e5e7eb;
   height: 100%;
   padding: 30px;
+}
+
+.location {
+  margin-top: 40px;
 }
 .content-calendar {
   width: 797.91px;
@@ -131,4 +137,19 @@ body {
   line-height: 27px;
   text-align: center;
   color: #d7e163;
+}
+
+.prev-next img {
+  cursor: pointer;
+}
+.prev-next img:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 50%;
+}
+
+.duration {
+  margin-top: 16px;
+}
+.dropdown {
+  margin-top: 8px;
 }

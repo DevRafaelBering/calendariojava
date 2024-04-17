@@ -16,21 +16,21 @@
       <div class="left-container">
         <div id="book-court">
           <h1>Book a Court</h1>
-          <p>Location</p>
-          <div class="custom-select" style="width: 340px">
-            <select>
-              <option value="singapore">Singapore</option>
-              <option value="0">Singapore</option>
-              <option value="1">Brazil</option>
-            </select>
+          <p class="location">Location</p>
+          <div class="dropdown">
+            <input type="text" placeholder="Pick a Country" readonly />
+            <ul class="options">
+              <li class="option">Singapore</li>
+              <li class="option">Brazil</li>
+            </ul>
           </div>
-          <p>Duration</p>
-          <div class="custom-select" style="width: 340px">
-            <select>
-              <option value="30">30 minutes</option>
-              <option value="30" onclick="myFunction()">30 minutes</option>
-              <option value="60">60 minutes</option>
-            </select>
+          <p class="duration">Duration</p>
+          <div class="dropdown">
+            <input type="text" placeholder="Pick a Time" readonly />
+            <ul class="options">
+              <li class="option" value="30">30 minutes</li>
+              <li class="option" value="60">60 minutes</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -40,9 +40,19 @@
           <div class="calendar">
             <div class="header">
               <h4 id="monthYear"></h4>
-              <div>
-                <button id="prev" onclick="prevMonth()">&lt;</button>
-                <button id="next" onclick="nextMonth()">&gt;</button>
+              <div class="prev-next">
+                <img
+                  src="./img/Button - Previous month.svg"
+                  alt="prev"
+                  id="prev"
+                  onclick="prevMonth()"
+                />
+                <img
+                  src="./img/Button - Next month.svg"
+                  alt="next"
+                  id="next"
+                  onclick="nextMonth()"
+                />
               </div>
             </div>
             <div class="weekdays">
