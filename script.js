@@ -37,12 +37,14 @@ function displayCalendar() {
   for (let i = 1; i <= daysInMonth; i++) {
     const day = document.createElement("div");
     day.textContent = i;
+    day.classList.add(`day-${i}`);
+
     if (i === currentDay) {
       day.classList.add("current-day");
     }
     day.onclick = () => {
       alert(
-        `You selected ${monthNames[currentMonth]} ${i}, ${currentYear} for the meeting.`
+        `Voce selecionou ${monthNames[currentMonth]} ${i}, ${currentYear} para reunião.`
       );
     };
     daysContainer.appendChild(day);

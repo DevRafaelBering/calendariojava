@@ -36,31 +36,41 @@
       </div>
       <section class="content-calendar">
         <h1 class="titulo-date">Pick date and time</h1>
-        <div class="calendar">
-          <div class="header">
-            <p id="monthYear"></p>
-            <div>
-              <button id="prev" onclick="prevMonth()">&lt;</button>
-              <button id="next" onclick="nextMonth()">&gt;</button>
+        <div class="content-flex">
+          <div class="calendar">
+            <div class="header">
+              <h4 id="monthYear"></h4>
+              <div>
+                <button id="prev" onclick="prevMonth()">&lt;</button>
+                <button id="next" onclick="nextMonth()">&gt;</button>
+              </div>
+            </div>
+            <div class="weekdays">
+              <div class="weekday">Su</div>
+              <div class="weekday">Mo</div>
+              <div class="weekday">Tu</div>
+              <div class="weekday">We</div>
+              <div class="weekday">Th</div>
+              <div class="weekday">Fr</div>
+              <div class="weekday">Sa</div>
+            </div>
+            <div class="days" id="days"></div>
+          </div>
+          <div class="content-mark">
+            <div class="days" id="day-22">
+              <p>date</p>
+            </div>
+            <div class="days" id="day-23">
+              <p>date</p>
+            </div>
+            <div class="btn">
+              <button class="btn-select">14:00</button>
+              <button class="btn-select">15:00</button>
             </div>
           </div>
-          <div class="weekdays">
-            <div class="weekday">Su</div>
-            <div class="weekday">Mo</div>
-            <div class="weekday">Tu</div>
-            <div class="weekday">We</div>
-            <div class="weekday">Th</div>
-            <div class="weekday">Fr</div>
-            <div class="weekday">Sa</div>
-          </div>
-          <div class="days" id="days"></div>
         </div>
       </section>
-      <script>
-        function myFunction() {
-          console.log("Opa foi");
-        }
-      </script>
+
       <script src="script.js"></script>
       <script src="select-script.js"></script>
     </main>

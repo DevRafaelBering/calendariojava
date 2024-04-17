@@ -81,10 +81,54 @@ body {
 .current-day::after {
   content: "";
   display: block;
-  width: 10px;
-  height: 10px;
-  background-color: green;
+  width: 5px;
+  height: 5px;
+  background-color: #d7e164;
   border-radius: 50%;
   margin: 0 auto;
   margin-top: 5px;
+}
+
+.days .day-22 {
+  background-color: #d7e164;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+.days .day-23 {
+  background-color: #d7e164;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+.content-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-mark {
+  width: 300px;
+  height: 500px;
+  padding: 16px 0px 0px 0px;
+}
+
+.btn {
+  padding-top: 16.49px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btn-select {
+  width: 268px;
+  height: 60px;
+  border-radius: 6px;
+  border: 1px solid #d7e163;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: center;
+  color: #d7e163;
 }
