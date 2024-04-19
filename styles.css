@@ -40,6 +40,7 @@
   flex-direction: column;
   height: 50px;
   align-items: center;
+  justify-content: center;
 }
 .days div:hover {
   background-color: #f0f0f0;
@@ -94,7 +95,8 @@ body {
   background-color: #d7e164;
   border-radius: 50%;
   margin: 0 auto;
-  margin-top: 5px;
+  margin-top: 35px;
+  position: absolute;
 }
 
 .days .day-22 {
@@ -125,10 +127,9 @@ body {
   padding-top: 16.49px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
-.btn-select {
+.btn {
   width: 268px;
   height: 60px;
   border-radius: 6px;
@@ -136,9 +137,10 @@ body {
   background-color: transparent;
   font-size: 18px;
   font-weight: 500;
-  line-height: 27px;
-  text-align: center;
   color: #d7e163;
+  margin-top: 10px;
+  cursor: pointer;
+  align-items: center;
 }
 
 .prev-next img {
@@ -154,4 +156,8 @@ body {
 }
 .dropdown {
   margin-top: 8px;
+}
+
+.escondido {
+  display: none;
 }

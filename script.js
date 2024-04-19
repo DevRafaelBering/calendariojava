@@ -77,6 +77,25 @@ function displayCalendar() {
       const dataEsperada = new Date(currentYear, currentMonth, i);
       const selectedDate = document.getElementsByClassName("selected-date")[0];
       selectedDate.innerHTML = `<p>${getFormattedDate(dataEsperada)}</p> `;
+      // Seu array de itens
+      var items30 = ["15:00", "15:30", "16:00", "16:30"];
+      var items60 = ["14:00", "15:00", "16:00", "17:00"];
+      var buttonContainer = document.getElementById("button-container");
+
+      items30.forEach(function (item) {
+        var button = document.createElement("button");
+        button.textContent = item;
+        button.className = "btn";
+        buttonContainer.appendChild(button);
+      });
+      var buttonContainer = document.getElementById("button-container");
+
+      items60.forEach(function (item) {
+        var button = document.createElement("button");
+        button.textContent = item;
+        button.className = "btn";
+        buttonContainer.appendChild(button);
+      });
     };
     daysContainer.appendChild(day);
   }
@@ -101,3 +120,19 @@ function nextMonth() {
 }
 
 displayCalendar();
+
+document.getElementById("opcao").addEventListener("change", function () {
+  var opcaoSelecionada = this.value;
+  var botao1 = document.getElementById("60m");
+  var botao2 = document.getElementById("30m");
+
+  if (opcaoSelecionada === "60") {
+    botao1.classList.remove("btn-escondido");
+    botao1.classList.add("btn-select");
+    botao2.classList.add("btn-escondido");
+  } else if (opcaoSelecionada === "30") {
+    botao1.classList.add("btn-escondido");
+    botao2.classList.remove("btn-escondido");
+    botao2.classList.add("btn-select");
+  }
+});
