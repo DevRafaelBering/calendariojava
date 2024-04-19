@@ -35,17 +35,18 @@
 }
 
 .days div {
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   height: 50px;
   align-items: center;
   justify-content: center;
 }
-.days div:hover {
+.days .day-22:hover {
   background-color: #f0f0f0;
 }
-
+.days .day-23:hover {
+  background-color: #f0f0f0;
+}
 main {
   background-color: #ffffff;
   display: flex;
@@ -104,12 +105,14 @@ body {
   border-radius: 25px;
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 .days .day-23 {
   background-color: #d7e164;
   border-radius: 25px;
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 
 .content-flex {
