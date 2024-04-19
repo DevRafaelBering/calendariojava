@@ -17,6 +17,36 @@ const monthNames = [
   "December",
 ];
 
+var diasDaSemana = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+let meses = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+function getFormattedDate(date) {
+  return `${diasDaSemana[date.getDay()]}, ${
+    meses[date.getMonth()]
+  } ${date.getDate()}`;
+}
+
 function displayCalendar() {
   const currentDate = new Date();
   const currentDay = currentDate.getDate();
@@ -42,10 +72,11 @@ function displayCalendar() {
     if (i === currentDay) {
       day.classList.add("current-day");
     }
+
     day.onclick = () => {
-      alert(
-        `Voce selecionou ${monthNames[currentMonth]} ${i}, ${currentYear} para reunião.`
-      );
+      const dataEsperada = new Date(currentYear, currentMonth, i);
+      const selectedDate = document.getElementsByClassName("selected-date")[0];
+      selectedDate.innerHTML = `<p>${getFormattedDate(dataEsperada)}</p> `;
     };
     daysContainer.appendChild(day);
   }
