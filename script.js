@@ -77,7 +77,6 @@ function displayCalendar() {
       const dataEsperada = new Date(currentYear, currentMonth, i);
       const selectedDate = document.getElementsByClassName("selected-date")[0];
       selectedDate.innerHTML = `<p>${getFormattedDate(dataEsperada)}</p> `;
-      // Seu array de itens
       var items30 = ["15:00", "15:30", "16:00", "16:30"];
       var items60 = ["14:00", "15:00", "16:00", "17:00"];
       var buttonContainer = document.getElementById("button-container");
