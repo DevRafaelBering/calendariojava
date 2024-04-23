@@ -87,7 +87,6 @@ function displayCalendar() {
           const valor = option.value;
           if (valor == "30") {
             buttonContainer.innerHTML = "";
-            console.log("Entrou 30");
             items30.forEach(function (item) {
               var button = document.createElement("button");
               button.textContent = item;
@@ -96,7 +95,6 @@ function displayCalendar() {
             });
           } else {
             buttonContainer.innerHTML = "";
-            console.log("Entrou 60");
             items60.forEach(function (item) {
               var button = document.createElement("button");
               button.textContent = item;
@@ -132,19 +130,3 @@ function nextMonth() {
 }
 
 displayCalendar();
-
-//document.getElementById("opcao").addEventListener("change", function () {
-// var opcaoSelecionada = this.value;
-//var botao1 = document.getElementById("60m");
-// var botao2 = document.getElementById("30m");
-
-//if (opcaoSelecionada === "60") {
-// botao1.classList.remove("btn-escondido");
-//botao1.classList.add("btn-select");
-//botao2.classList.add("btn-escondido");
-//} else if (opcaoSelecionada === "30") {
-// botao1.classList.add("btn-escondido");
-// botao2.classList.remove("btn-escondido");
-// botao2.classList.add("btn-select");
-//}
-//});
