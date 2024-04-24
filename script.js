@@ -72,39 +72,38 @@ function displayCalendar() {
     if (i === currentDay) {
       day.classList.add("current-day");
     }
-
+    var items30 = ["15:00", "15:30", "16:00", "16:30"];
+    var items60 = ["14:00", "15:00", "16:00", "17:00"];
+    var buttonContainer = document.getElementById("button-container");
+    let options = document.querySelectorAll("#dropdown-time .option");
+    options.forEach((option) => {
+      option.addEventListener("click", () => {
+        const valor = option.value;
+        if (valor == "30") {
+          buttonContainer.innerHTML = "";
+          items30.forEach(function (item) {
+            var button = document.createElement("button");
+            button.textContent = item;
+            button.className = "btn";
+            buttonContainer.appendChild(button);
+          });
+        } else {
+          buttonContainer.innerHTML = "";
+          items60.forEach(function (item) {
+            var button = document.createElement("button");
+            button.textContent = item;
+            button.className = "btn";
+            buttonContainer.appendChild(button);
+          });
+        }
+      });
+    });
     day.onclick = () => {
+      let contentTime = document.querySelector(".content-mark");
+      contentTime.classList.add("open");
       const dataEsperada = new Date(currentYear, currentMonth, i);
       const selectedDate = document.getElementsByClassName("selected-date")[0];
       selectedDate.innerHTML = `<p>${getFormattedDate(dataEsperada)}</p> `;
-      var items30 = ["15:00", "15:30", "16:00", "16:30"];
-      var items60 = ["14:00", "15:00", "16:00", "17:00"];
-      var buttonContainer = document.getElementById("button-container");
-      let options = document.querySelectorAll("#dropdown-time .option");
-      options.forEach((option) => {
-        option.addEventListener("click", () => {
-          const valor = option.value;
-          if (valor == "30") {
-            buttonContainer.innerHTML = "";
-            items30.forEach(function (item) {
-              var button = document.createElement("button");
-              button.textContent = item;
-              button.className = "btn";
-              buttonContainer.appendChild(button);
-            });
-          } else {
-            buttonContainer.innerHTML = "";
-            items60.forEach(function (item) {
-              var button = document.createElement("button");
-              button.textContent = item;
-              button.className = "btn";
-              buttonContainer.appendChild(button);
-            });
-          }
-        });
-      });
-
-      buttonContainer.innerHTML = "";
     };
     daysContainer.appendChild(day);
   }

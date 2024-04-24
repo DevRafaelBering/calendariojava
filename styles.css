@@ -71,7 +71,7 @@ body {
   margin-top: 40px;
 }
 .content-calendar {
-  width: 797.91px;
+  width: auto;
   padding-top: 36px;
   padding-inline: 25px;
 }
@@ -101,14 +101,14 @@ body {
 }
 
 .days .day-22 {
-  background-color: #d7e164;
+  background-color: #f4f6d3;
   border-radius: 25px;
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
 .days .day-23 {
-  background-color: #d7e164;
+  background-color: #f4f6d3;
   border-radius: 25px;
   width: 50px;
   height: 50px;
@@ -121,9 +121,15 @@ body {
 }
 
 .content-mark {
-  width: 300px;
+  width: 0px;
   height: 500px;
   padding-top: 41.91px;
+  overflow: hidden;
+  padding-left: 35px;
+  transition: all 0.5s ease;
+}
+.content-mark.open {
+  width: 305px;
 }
 
 .btn {
